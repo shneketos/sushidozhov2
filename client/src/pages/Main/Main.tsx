@@ -32,14 +32,7 @@ export const Main = () => {
           <div className={styles.item}>
             <img src={Delivery} alt="delivery" />
             <div>
-              <div>200 ₽</div>
-              <span>стоимость доставки</span>
-            </div>
-          </div>
-          <div className={styles.item}>
-            <img src={Medal} alt="medal" />
-            <div>
-              <div>от 1500 ₽</div>
+              <div>0 ₽</div>
               <span>Бесплатная доставка</span>
             </div>
           </div>

@@ -1,9 +1,13 @@
 header {
+  background-color: white;
+  z-index: 100;
   display: flex;
   align-items: center;
   margin: 0 auto;
   justify-content: space-between;
-  width: 1300px;
+  width: 100%;
+  left: 0;
+  right: 0;
   border-bottom: 1px solid grey;
   padding: 20px 50px 20px 30px;
   font-size: 20px;
@@ -12,7 +16,11 @@ header {
     text-decoration: none;
   }
 }
+.fix {
+  position: fixed;
+}
 .logo {
+  margin-left: 200px;
   width: 200px;
 }
 .center {
@@ -32,6 +40,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 200px;
   img {
     width: 32px;
   }

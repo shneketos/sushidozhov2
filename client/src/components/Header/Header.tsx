@@ -5,8 +5,9 @@ import User from "../../img/user.svg";
 import styles from "./Header.module.scss";
 import { Link } from "react-router-dom";
 export const Header = () => {
+  const fix = 0;
   return (
-    <header>
+    <header className={fix ? styles.fix : ""}>
       <Link to="/">
         <img src={Logo} alt="logo" className={styles.logo} />
       </Link>
