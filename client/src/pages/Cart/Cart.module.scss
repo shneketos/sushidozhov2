@@ -1,0 +1,148 @@
+.cart {
+  margin: 30px 15% 0 15%;
+  min-height: 800px;
+}
+.carttop {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  align-items: center;
+  display: flex;
+  font-size: 32px;
+  margin: 0;
+}
+.clear {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  user-select: none;
+  background: none;
+  border: none;
+  color: #b6b6b6;
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 7px;
+  font-weight: 700;
+  &:hover {
+    color: black;
+  }
+}
+
+.bottom {
+  margin: 50px 0;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  span {
+    font-size: 22px;
+    b {
+      font-weight: bold;
+    }
+  }
+  span:last-of-type {
+    b {
+      font-weight: bold;
+      color: #fe5f1e;
+    }
+  }
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.back {
+  background: none;
+  font-size: 16px;
+  font-weight: 600;
+  width: 210px;
+  border: 1px solid #747271;
+  border-radius: 30px;
+  cursor: pointer;
+  min-width: 100px;
+  padding: 10px 20px;
+  text-align: center;
+  &:hover {
+    background-color: black;
+    a {
+      color: #ddd;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+  }
+}
+
+.pay {
+  background: none;
+  font-size: 16px;
+  font-weight: 600;
+  width: 210px;
+  border: 1px solid #fe5f1e;
+  border-radius: 30px;
+  cursor: pointer;
+  min-width: 100px;
+  padding: 10px 20px;
+  text-align: center;
+
+  &:hover {
+    background-color: #fe5f1e;
+    a {
+      color: black;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #fe5f1e;
+    font-size: 16px;
+  }
+}
+.empty {
+  margin: 150px auto;
+  text-align: center;
+  width: 650px;
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  p {
+    color: #777;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    line-height: 145%;
+  }
+}
+.smile {
+  margin-top: 20px;
+  font-size: 60px;
+}
+.buttontomenu {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+  justify-content: center;
+  min-width: 100px;
+  padding: 10px 20px;
+  text-align: center;
+  width: 315px;
+  background-color: #fff;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  &:hover {
+    border: 1px solid #fe5f1e;
+    a {
+      color: #fe5f1e;
+    }
+  }
+}

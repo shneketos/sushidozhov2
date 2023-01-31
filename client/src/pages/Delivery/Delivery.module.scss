@@ -60,13 +60,9 @@
   }
 }
 
-.payment {
-  margin: 0 0 27px;
-  padding: 5px 0 0;
-}
 .paymentitems {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding-top: 12px;
   gap: 50px;
   margin-bottom: 70px;
@@ -84,7 +80,10 @@
     width: 80px;
   }
   p {
-    font-weight: 600;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 300;
     font-style: italic;
+    color: #404354;
   }
 }

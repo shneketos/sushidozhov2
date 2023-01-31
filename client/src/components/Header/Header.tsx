@@ -4,10 +4,17 @@ import Cart from "../../img/cart.svg";
 import User from "../../img/user.svg";
 import styles from "./Header.module.scss";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 export const Header = () => {
-  const fix = 0;
+  const location = useLocation();
+  const [isMenu, setIsMenu] = React.useState(false);
+  useEffect(() => {
+    location.pathname === "/menu" ? setIsMenu(true) : setIsMenu(false);
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
-    <header className={fix ? styles.fix : ""}>
+    <header className={isMenu ? styles.fix : ""}>
       <Link to="/">
         <img src={Logo} alt="logo" className={styles.logo} />
       </Link>

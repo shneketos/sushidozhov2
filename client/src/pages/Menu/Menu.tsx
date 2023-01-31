@@ -1,11 +1,12 @@
 import React from "react";
+import Header from "../../components/Header/Header";
 import Item from "../../components/Item/Item";
 import styles from "./Menu.module.scss";
 
 export const Menu = () => {
   return (
     <main>
-      <aside>
+      <nav>
         <ul>
           <li>
             <a href="#pizza">Пицца</a>
@@ -20,7 +21,7 @@ export const Menu = () => {
             <a href="#sets">Сеты</a>
           </li>
         </ul>
-      </aside>
+      </nav>
       <section className={styles.section}>
         <p id="pizza">Пицца</p>
         <Item />

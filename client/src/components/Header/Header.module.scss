@@ -6,6 +6,7 @@ header {
   margin: 0 auto;
   justify-content: space-between;
   width: 100%;
+  max-width: 1300px;
   left: 0;
   right: 0;
   border-bottom: 1px solid grey;
@@ -16,18 +17,67 @@ header {
     text-decoration: none;
   }
 }
+@media (max-width: 1300px) {
+  header {
+    max-width: 1000px;
+    padding: 20px 0 20px 0;
+  }
+}
+@media (max-width: 1050px) {
+  header {
+    max-width: 800px;
+    padding: 10px 0 10px 0;
+
+    img {
+      width: 100px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  header {
+    max-width: 700px;
+    padding: 0;
+    img {
+      width: 100px;
+    }
+  }
+  .center {
+    font-size: 16px;
+    padding: 0;
+  }
+}
+@media (max-width: 750px) {
+  header {
+    max-width: 500px;
+    padding: 0;
+    img {
+      width: 100px;
+    }
+  }
+  .center {
+    font-size: 10px;
+  }
+  .cart {
+    span:nth-child(1) {
+      display: none;
+    }
+    div {
+      display: none;
+    }
+  }
+}
 .fix {
   position: fixed;
 }
 .logo {
-  margin-left: 200px;
-  width: 200px;
+  max-width: 200px;
 }
 .center {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  width: 500px;
+  max-width: 500px;
+  gap: 2rem;
   a {
     color: rgb(126, 121, 121);
     &:hover {
@@ -40,7 +90,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 200px;
+
   img {
     width: 32px;
   }
@@ -55,7 +105,7 @@ header {
   border: 1px solid transparent;
   border-radius: 30px;
   cursor: pointer;
-  min-width: 120px;
+  max-width: 120px;
   height: 40px;
   text-align: center;
   justify-content: center;
@@ -76,4 +126,7 @@ header {
   text-align: center;
   justify-content: center;
   font-weight: 300;
+  img {
+    width: 40px;
+  }
 }

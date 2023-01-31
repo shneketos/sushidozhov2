@@ -3,12 +3,11 @@ import Banner from "../../img/sushidozho2.png";
 import Clock from "../../img/clock.svg";
 import Wallet from "../../img/wallet.svg";
 import Delivery from "../../img/delivery.svg";
-import Medal from "../../img/medal.svg";
 import styles from "./Main.module.scss";
 export const Main = () => {
   return (
     <main className={styles.main}>
-      <section className="upper">
+      <section>
         <img src={Banner} width={1250} alt="banner" />
         <div className={styles.info}>
           <h1>Сушидо Жо</h1>

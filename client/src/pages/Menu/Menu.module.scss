@@ -1,27 +1,31 @@
 .section {
   max-width: 1400px;
   margin: 0 auto 50px auto;
+  padding-top: 150px;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   margin: 40px 0 0 40px;
   font-size: 26px;
   font-weight: 700;
+  scroll-margin-top: 200px;
 }
-aside {
-  z-index: 100;
+nav {
+  background-color: white;
+  margin-top: 129px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  align-content: center;
   position: fixed;
-  margin: 0;
-  padding: 0;
-  border: 1px solid black;
-  border-radius: 0 20px 20px 0;
-  width: 100px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
   ul {
     display: flex;
-    flex-direction: column;
+
     gap: 30px;
     margin: 0;
     padding: 10px;
