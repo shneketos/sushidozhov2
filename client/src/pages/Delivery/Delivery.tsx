@@ -42,7 +42,7 @@ export const Delivery = () => {
             </li>
           </ul>
         </section>
-        <section>
+        <section className={styles.payment}>
           <h2>Оплата</h2>
           <ul className={styles.paymentitems}>
             <li className={styles.paymentitem}>
@@ -68,7 +68,7 @@ export const Delivery = () => {
             </li>
           </ul>
         </section>
-        <section>
+        <section className={styles.map}>
           <h2>Зоны доставки</h2>
           <p>
             <iframe

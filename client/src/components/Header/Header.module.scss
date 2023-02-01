@@ -17,10 +17,14 @@ header {
     text-decoration: none;
   }
 }
+//media reqs start
 @media (max-width: 1300px) {
   header {
     max-width: 1000px;
     padding: 20px 0 20px 0;
+  }
+  footer {
+    max-width: 1000px;
   }
 }
 @media (max-width: 1050px) {
@@ -32,6 +36,9 @@ header {
       width: 100px;
     }
   }
+  footer {
+    max-width: 800px;
+  }
 }
 @media (max-width: 800px) {
   header {
@@ -41,34 +48,103 @@ header {
       width: 100px;
     }
   }
+  footer {
+    max-width: 700px;
+  }
   .center {
     font-size: 16px;
     padding: 0;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 700px) {
   header {
     max-width: 500px;
     padding: 0;
     img {
       width: 100px;
     }
-  }
-  .center {
-    font-size: 10px;
-  }
-  .cart {
-    span:nth-child(1) {
+    .center {
       display: none;
     }
-    div {
-      display: none;
+    .dropdown {
+      display: flex;
     }
+  }
+  footer {
+    max-width: 500px;
   }
 }
+@media (max-width: 500px) {
+  header {
+    max-width: 450px;
+    padding: 0;
+    img {
+      width: 100px;
+    }
+    .center {
+      display: none;
+    }
+    .dropdown {
+      display: flex;
+    }
+  }
+  footer {
+    max-width: 450px;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    max-width: 350px;
+    padding: 0;
+    img {
+      width: 100px;
+    }
+    .center {
+      display: none;
+    }
+    .dropdown {
+      display: flex;
+    }
+    .right {
+      div {
+        max-width: 140px;
+      }
+    }
+  }
+  footer {
+    max-width: 350px;
+  }
+}
+@media (max-width: 353px) {
+  header {
+    max-width: 300px;
+    padding: 0;
+    img {
+      width: 100px;
+    }
+    .center {
+      display: none;
+    }
+    .cart span:nth-child(1) {
+      display: none;
+    }
+    .cart div {
+      display: none;
+    }
+    .dropdown {
+      display: flex;
+    }
+  }
+  footer {
+    max-width: 300px;
+  }
+}
+//end media
 .fix {
   position: fixed;
+  background-color: rgba(255, 255, 255, 0.801);
 }
+
 .logo {
   max-width: 200px;
 }
@@ -129,4 +205,39 @@ header {
   img {
     width: 40px;
   }
+}
+.dropdown {
+  img {
+    width: 64px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  display: none;
+}
+.dropdownmenu {
+  z-index: 100;
+  position: absolute;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 60px;
+  padding: 10px;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  a {
+    color: black;
+    font-weight: 600;
+    &:hover {
+      color: #fe5f1e;
+    }
+  }
+}
+.dropdownmenu_active {
+  opacity: 1;
+  visibility: visible;
+}
+.dropdownmenu_inactive {
+  opacity: 0;
+  visibility: hidden;
 }

@@ -17,9 +17,35 @@
     width: 100px;
   }
 }
+
+//
+
+//
 .cart_right {
   display: flex;
   gap: 100px;
+}
+@media (max-width: 800px) {
+  .cart_right {
+    gap: 40px;
+  }
+}
+@media (max-width: 700px) {
+  .cart_right {
+    gap: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .cart_right {
+    gap: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .cart_right {
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 .cartinfo {
   display: flex;

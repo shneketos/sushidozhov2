@@ -6,6 +6,7 @@ import styles from "./Header.module.scss";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { Dropdown } from "./Dropdown";
 export const Header = () => {
   const location = useLocation();
   const [isMenu, setIsMenu] = React.useState(false);
@@ -18,6 +19,7 @@ export const Header = () => {
       <Link to="/">
         <img src={Logo} alt="logo" className={styles.logo} />
       </Link>
+      <Dropdown />
       <ul className={styles.center}>
         <li>
           <Link to="/">Главная</Link>

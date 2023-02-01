@@ -3,10 +3,55 @@
   flex-direction: column;
   align-items: center;
 
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto 150px auto;
+  h1 {
+    display: flex;
+  }
   p {
     font-weight: 300;
     font-style: italic;
+  }
+}
+
+@media (max-width: 1050px) {
+  .about {
+    h3 {
+      max-width: 700px;
+    }
+    p {
+      max-width: 800px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .about {
+    h3 {
+      max-width: 450px;
+    }
+    p {
+      max-width: 500px;
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .about {
+    h3 {
+      max-width: 250px;
+    }
+    p {
+      max-width: 300px;
+    }
+  }
+}
+@media (max-width: 353px) {
+  .about {
+    h3 {
+      max-width: 200px;
+    }
+    p {
+      max-width: 250px;
+    }
   }
 }
