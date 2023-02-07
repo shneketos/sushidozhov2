@@ -1,7 +1,6 @@
 import React from "react";
 import Logo from "../../img/l2.png";
 import Cart from "../../img/cart.svg";
-import User from "../../img/user.svg";
 import styles from "./Header.module.scss";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -43,9 +42,6 @@ export const Header = () => {
             <span>10</span>
           </Link>
         </div>
-        <Link to="/profile">
-          <img src={User} alt="user" className={styles.user} />
-        </Link>
       </div>
     </header>
   );

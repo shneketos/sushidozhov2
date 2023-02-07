@@ -125,12 +125,7 @@ header {
     .center {
       display: none;
     }
-    .cart span:nth-child(1) {
-      display: none;
-    }
-    .cart div {
-      display: none;
-    }
+
     .dropdown {
       display: flex;
     }
@@ -191,21 +186,7 @@ header {
     margin: 0 6px;
   }
 }
-.user {
-  background-color: #fe5f1e;
-  border: 1px solid transparent;
-  border-radius: 30px;
-  cursor: pointer;
-  padding: 5px;
-  min-width: 40px;
-  height: 40px;
-  text-align: center;
-  justify-content: center;
-  font-weight: 300;
-  img {
-    width: 40px;
-  }
-}
+
 .dropdown {
   img {
     width: 64px;

@@ -9,7 +9,9 @@ export const Cart = () => {
         <h2 className={styles.title}>Корзина</h2>
         <button className={styles.clear}>Очистить корзину</button>
       </div>
-      <div className="cart-items">
+      <section className={styles.cartitems}>
+        {<CartItem />}
+        {<CartItem />}
         {<CartItem />}
         <div className={styles.bottom}>
           <div className={styles.details}>
@@ -29,7 +31,7 @@ export const Cart = () => {
             </button>
           </div>
         </div>
-      </div>
+      </section>
     </section>
   );
 };

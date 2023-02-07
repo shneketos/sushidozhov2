@@ -119,6 +119,9 @@ main {
       max-width: 500px;
     }
   }
+  .infoitems {
+    padding: 0;
+  }
   .payment ul {
     flex-direction: column;
     align-items: center;
@@ -156,6 +159,9 @@ main {
         height: 300px;
       }
     }
+  }
+  .infoitems {
+    margin: 0;
   }
   .payment ul {
     flex-direction: column;

@@ -11,16 +11,14 @@
   align-items: center;
   display: flex;
   margin-right: 15px;
-  width: 10%;
-  img {
-    height: 60px;
-    width: 100px;
-  }
+  height: 60px;
+  width: 100px;
 }
 
-//
-
-//
+.cart_left {
+  display: flex;
+  align-items: center;
+}
 .cart_right {
   display: flex;
   gap: 100px;
@@ -38,14 +36,20 @@
 @media (max-width: 550px) {
   .cart_right {
     gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .cartitem {
+    flex-direction: column;
+  }
+  .cartcount {
+    gap: 10px;
+  }
+  .cart_left {
+    width: 100%;
   }
 }
 @media (max-width: 375px) {
-  .cart_right {
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-  }
 }
 .cartinfo {
   display: flex;

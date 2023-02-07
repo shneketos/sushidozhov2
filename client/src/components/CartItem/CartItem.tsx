@@ -6,21 +6,24 @@ import Del from "../../img/del.svg";
 export const CartItem = () => {
   return (
     <div className={styles.cartitem}>
-      <img
-        className={styles.cartimg}
-        src="https://habrastorage.org/webt/qc/fs/ni/qcfsnicmqu_zwlh4wv1nj7okqdq.jpeg"
-        alt="name"
-      />
+      <div className={styles.cart_left}>
+        <img
+          className={styles.cartimg}
+          src="https://habrastorage.org/webt/qc/fs/ni/qcfsnicmqu_zwlh4wv1nj7okqdq.jpeg"
+          alt="name"
+        />
 
-      <div className={styles.cartinfo}>
-        <h3>{"title"}</h3>
+        <div className={styles.cartinfo}>
+          <h3>{"Филадельфия"}</h3>
+        </div>
       </div>
+
       <div className={styles.cart_right}>
         <div className={styles.cartcount}>
           <button className={styles.btn}>
             <img src={Minus} alt="-" />
           </button>
-          <b>{"count"}</b>
+          <b>{"10"}</b>
           <button className={styles.btn}>
             <img src={Plus} alt="+" />
           </button>
